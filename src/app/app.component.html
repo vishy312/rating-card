@@ -1,0 +1,35 @@
+<div class="main-card">
+  <!-- Rating state start -->
+  <div class="rating-card">
+    <div class="star-div">
+      <img class="star-icon" src="../assets/images/icon-star.svg">
+    </div>
+    <h1>How did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is appreciated
+    to help us improve our offering!</p>
+    <div class="ratings">
+      <div (click)="ratingButton.selectRating(1, $event)" class="rating">1</div>
+      <div (click)="ratingButton.selectRating(2, $event)" class="rating">2</div>
+      <div (click)="ratingButton.selectRating(3, $event)" class="rating">3</div>
+      <div (click)="ratingButton.selectRating(4, $event)" class="rating">4</div>
+      <div (click)="ratingButton.selectRating(5, $event)" class="rating">5</div>
+    </div>
+    <button (click)="ratingButton.submitButton($event)" class="submit-btn">SUBMIT</button><br>
+  </div>
+
+  <!-- Rating state end -->
+
+
+  <!-- Thank you state start -->
+  <div class="thankyou-card">
+    <img src="../assets/images/illustration-thank-you.svg" class="thanks-icon">
+    <div class="result">
+      <p>You selected {{ratingButton.result }} out of 5</p>
+    </div>
+    <h2>Thank you!</h2>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support,
+    don’t hesitate to get in touch!</p>
+  </div>
+
+  <!-- Thank you state end -->
+</div>

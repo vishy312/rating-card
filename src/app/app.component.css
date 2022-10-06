@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* ### Primary 
+- Orange: hsl(25, 97%, 53%) 
+### Neutral 
+- White: hsl(0, 0%, 100%) 
+- Light Grey: hsl(217, 12%, 63%) 
+- Medium Grey: hsl(216, 12%, 54%) 
+- Dark Blue: hsl(213, 19%, 18%) 
+- Very Dark Blue: hsl(216, 12%, 8%) */
+
+.main-card{
+    width:375px;
+    justify-content: center;
+    border-color: black;
+    border-width: 1em;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    position: relative;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.rating-card{
+    width: 90%;
+    justify-content: center;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    padding: 1.5em;
+    z-index: 1;
+}
+
+.thankyou-card{
+    width: 90%;
+    justify-content: center;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    padding: 1.5em;
+    z-index: 0;
+}
+
+.thankyou-card>h2{
+    margin-top: 1em;
+}
+
+.star-div{
+    background-color: hsl(212, 23%, 25%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ratings{
+    display: flex;
+    justify-content: space-between;
+    color: hsl(217, 12%, 63%);
+    margin-block: 1em;
+}
+
+.rating{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: hsl(212, 23%, 25%);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.submit-btn{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1em;
+    margin-inline: auto;
+    background-color: hsl(25, 97%, 53%);
+    border-width: 0;
+    border-radius: 30px;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.thanks-icon{
+    margin-inline: 2.7em;   
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(212, 23%, 25%);
+    color:hsl(25, 97%, 53%);
+    width: 180px;
+    border-radius: 15px;
+    padding: 0.1em;
+    margin-inline: auto;
+}

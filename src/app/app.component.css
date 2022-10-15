@@ -77,4 +77,11 @@
     letter-spacing: 0.2rem;
     font-weight: bold;
     cursor: pointer;
+    text-decoration:none;
+    margin-top: 2em;
+}
+
+a {
+    text-decoration: none !important;
+    color: hsl(0, 0%, 100%);
 }

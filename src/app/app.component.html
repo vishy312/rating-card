@@ -1,6 +1,6 @@
 <div class="main-card">
   <!-- Rating state start -->
-  <div class="rating-card">
+  <div *ngIf="ratingButton.notRated" class="rating-card">
     <div class="star-div">
       <img class="star-icon" src="../assets/images/icon-star.svg">
     </div>
@@ -14,10 +14,10 @@
       <div (click)="ratingButton.selectRating(4, $event)" class="rating">4</div>
       <div (click)="ratingButton.selectRating(5, $event)" class="rating">5</div>
     </div>
-    <button (click)="ratingButton.submitButton($event)" class="submit-btn">SUBMIT</button><br>
+    <button (click)="ratingButton.submitButton($event)" class="submit-btn"><a [routerLink]="['/result']">SUBMIT</a></button><br>
   </div>
 
   <!-- Rating state end -->
 
-  <result-card [rating]="ratingButton.result"></result-card>
+  <result-card (rate)="ratingButton.rateAgainFunc()" [rating]="ratingButton.result"></result-card>
 </div>

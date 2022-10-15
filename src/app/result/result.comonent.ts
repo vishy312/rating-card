@@ -1,4 +1,5 @@
-import { Component, Input, Output } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+
 
 
 
@@ -10,7 +11,12 @@ import { Component, Input, Output } from '@angular/core';
 
 
 export class ResultComponent {
+
     @Input() rating: any;
 
+    @Output() rate = new EventEmitter;
 
+    rateAgain(){
+        this.rate.emit();
+    }
 }

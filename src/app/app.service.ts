@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 
 export class RatingButton{
     result = 0;
+    notRated: boolean = true;
 
     selectRating(value: number, event: any){
         this.result = value;
@@ -14,6 +15,10 @@ export class RatingButton{
     }
 
     submitButton(event: any){
-        event.target.parentElement.style.zIndex = -1;
+        this.notRated = false;
+    }
+
+    rateAgainFunc(){
+        this.notRated = true;
     }
 }

@@ -89,7 +89,8 @@ export class RatingButton{
 
 ### Continued development
 
-To be written in future.
+* Added a child component for the result card and sent data to and from the child component.
+* Added routing for both of the cards
 
 ## Author
 

@@ -1,0 +1,32 @@
+.thanks-icon {
+    margin-inline: 2.7em;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(212, 23%, 25%);
+    color: hsl(25, 97%, 53%);
+    width: 180px;
+    border-radius: 15px;
+    padding: 0.1em;
+    margin-inline: auto;
+}
+
+.thankyou-card {
+    width: 90%;
+    justify-content: center;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    padding: 1.5em;
+    z-index: 0;
+}
+
+.thankyou-card>h2 {
+    margin-top: 1em;
+}

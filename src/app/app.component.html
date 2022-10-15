@@ -19,17 +19,5 @@
 
   <!-- Rating state end -->
 
-
-  <!-- Thank you state start -->
-  <div class="thankyou-card">
-    <img src="../assets/images/illustration-thank-you.svg" class="thanks-icon">
-    <div class="result">
-      <p>You selected {{ratingButton.result }} out of 5</p>
-    </div>
-    <h2>Thank you!</h2>
-    <p>We appreciate you taking the time to give a rating. If you ever need more support,
-    don’t hesitate to get in touch!</p>
-  </div>
-
-  <!-- Thank you state end -->
+  <result-card [rating]="ratingButton.result"></result-card>
 </div>

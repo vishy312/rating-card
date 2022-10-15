@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RatingButton } from './app.service';
+import { ResultComponent } from './result/result.comonent';
 
 @Component({
   selector: 'app-root',
